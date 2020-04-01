@@ -99,7 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #935d8c;
+		background-color:white;
 		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
@@ -120,15 +120,14 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
+		background-color:white;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
 	body, input, select, textarea {
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 17pt;
-		font-weight: 300;
-		line-height: 1.65;
+		font-weight: 700;
+		font-style: normal;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -3783,3 +3782,52 @@ input, select, textarea {
 			}
 
 		}
+		#carrusel {
+			float:left;
+			width:600px;
+			overflow:hidden;
+			height:203px;
+			position:relative;
+			margin-top:20px;
+			margin-bottom:20px;
+			
+		}
+		 
+		#carrusel .left-arrow {
+			position:absolute;
+			left:10px;
+			z-index:1;
+			top:50%;
+			margin-top:-9px;
+		}
+		 
+		#carrusel .right-arrow {
+			position:absolute;
+			right:10px;
+			z-index:1;
+			top:50%;
+			margin-top:-9px;
+		}
+		 
+		.carrusel {
+			width:4000px;
+			left:0px;
+			position:absolute;
+			z-index:0;
+		}
+		 
+		.carrusel>div {
+			float: left;
+			height: 203px;
+			margin-right: 5px;
+			width: 195px;
+			text-align:center;
+		}
+		 
+		.carrusel img {
+			cursor:pointer;
+		}
+		 
+		.product {
+			border:#CCCCCC 1px solid;
+		}	
