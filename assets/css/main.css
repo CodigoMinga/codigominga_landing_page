@@ -3790,6 +3790,7 @@ input, select, textarea {
 			position:relative;
 			margin-top:20px;
 			margin-bottom:20px;
+			margin: 0px auto;
 			
 		}
 		 
