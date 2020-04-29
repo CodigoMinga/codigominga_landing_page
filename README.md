@@ -1,7 +1,4 @@
-# codigominga_lading_page
-Pagina de inicio de CodigoMinga.
+plate-box
+=========
 
-Contacto:
-osvaldo.alvarado.dev@gmail.com
-
-
+HTML5 boiler plat with bootstrap support and fontawesome support... Included semantic HTML :P
