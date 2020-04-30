@@ -8,18 +8,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="icomoon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Codigo Minga [Cooperativa]</title>
-    <style>      
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+
         body{
             background-color: #F4F4F4;
         }  
+
         .navbar-light .navbar-nav .nav-link{
             color:#C60729;
             font-weight: bold;
         }
+
         .navbar-light .navbar-nav .nav-link.active{
             color:#C60729;
         }
+
         .navbar-right{
             justify-content:flex-end;
         }
@@ -41,6 +50,7 @@
             background-size: cover;
             padding:20px;
         }
+
         .material-card .btn{
             position: absolute;
             bottom:-28px;
@@ -55,13 +65,12 @@
             -webkit-box-shadow: inset 6px 8px 6px -6px #F38540;
             box-shadow:         inset 6px 8px 6px -6px #F38540;
         }
+
         .material-card img{
             width:100%;
             height:35%;
         }
 
-
-        
         .presentacion-card {
             background: #fff;
             border-radius: 2px;
@@ -99,6 +108,7 @@
             background-color:#99A4A4;
             transition: background-color 0.5s linear 0.1s;
         }
+
         .presentacion-info{
             position: absolute;
             bottom:-250px;
@@ -183,7 +193,6 @@
             }
         }
 
-
         .ventana-body{
             background-color: white;
             border-radius: 8px;
@@ -197,6 +206,7 @@
             width: calc(100% - 10px);
             overflow: hidden;
         }
+
         .ventana-contenido{
             width: 100%;
             height: 100%;
@@ -208,12 +218,15 @@
             flex-wrap: wrap;
             overflow-y: scroll;
         }
+
         .ventana-contenido li{
             margin-bottom: 20px;
         }
+
         .ventana-contenido ul {
-        list-style: none;
+            list-style: none;
         }
+
         .ventana-contenido .redli li::before {
             content: "\27A5";
             color: #C60729;
@@ -241,12 +254,14 @@
             display: flex;
             flex-direction: row;
         }
+
         .ventana-title{
             flex-grow: 1;
             font-weight: bold;
             color:#EDEDED;
             font-size: 1.1rem;
         }
+
         .ventana-button{
             color:#EDEDED;
             font-size: 0.9rem;
@@ -258,6 +273,13 @@
             width: 100%;
             height: 855px;
             overflow: hidden;
+        }
+        #FOOTER{
+            display: block;
+            width: 100%;
+            padding-top:20px;
+            background: linear-gradient(0deg, #F38540 0%, #C60729 66%);
+            color:white;
         }
     </style>
   </head>
@@ -305,25 +327,34 @@
         </div>
         <div class="material-card">
             <img src="img/clases.svg"/>
-            <h5 align="center">ASESORÍAS Y TALLERES</h5>
-            <div>
-
+            <h5 align="center" style="height: 48px;">ASESORÍAS Y TALLERES</h5>
+            <div style="font-size: small;text-align: center;">
+                Analizamos tu producto o servicio para detectar puntos perjudiciales y ofrecerte oportunidades de mejora.
             </div>
             <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
         </div>
         <div class="material-card">
             <img src="img/web.svg"/>
-            <h5 align="center">SITIOS WEB Y WEB APPS</h5>
+            <h5 align="center" style="height: 48px;">SITIOS WEB Y WEB APPS</h5>
+            <div style="font-size: small;text-align: center;">
+                Construimos webs con lo mejor de las apps y apps con las ventajas de una web. Con alta calidad, estables y eficientes para tu proyecto
+            </div>
             <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
         </div>
         <div class="material-card">
             <img src="img/diseno.svg"/>
-            <h5 align="center">DISEÑO DIGITAL</h5>
+            <h5 align="center" style="height: 48px;">DISEÑO DIGITAL </br></h5>
+            <div style="font-size: small;text-align: center;">
+                Contemplamos el producto o servicio de forma global para ofrecerte un resultado óptimo, pasando del branding al sistema de diseño.
+            </div>
             <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
         </div>
         <div class="material-card">
             <img src="img/soporte.svg"/>
-            <h5 align="center">SOPORTE Y MANTENCIÓN</h5>
+            <h5 align="center" style="height: 48px;">SOPORTE Y MANTENCIÓN</h5>
+            <div style="font-size: small;text-align: center;">
+                Nuestro compromiso no termina con la finalizacion del proyecto, te acompañamos más allá de su entrega.
+            </div>
             <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
         </div>
     </section>
@@ -474,6 +505,24 @@
             </div>
         </div>
     </section>
+    <div id="FOOTER">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4">
+                    <h5>Fono: +56 9 7315 5545</h5>
+                    <h5>Email: info@codigominga.cl</h5>
+                </div>
+                <div class="col-12 col-sm-4">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <h5><span class="icon-facebook2"></span> Facebook</h5>
+                    <h5><span  class="icon-instagram"></span> Instagram</h5>
+                    <h5><span  class="icon-github"></span> GitHub</h5>
+                    <h5><span  class="icon-linkedin"></span> Linkedin</h5>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -484,9 +533,7 @@
             console.log('class');
             $('.ventana').click(function(){
                 var activa = $('.activa').eq(0);
-                console.log(activa);
                 var selecccionada = $(this);
-                console.log(selecccionada);
                 var clase = selecccionada.attr('class').replace("ventana ", "");
                 if(activa != selecccionada){
                     activa.removeClass('activa').addClass(clase);
