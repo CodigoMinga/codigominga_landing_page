@@ -181,6 +181,8 @@
             .ventana{
                 width: 90%;
                 left:auto;
+                margin-left: 0px;
+                margin-right: 0px;
             }
             #CONTENEDOR-ventana .activa{
                 left:auto;
@@ -282,6 +284,91 @@
             color:white;
         }
     </style>
+    <style> 
+        #wave-container{
+            width: 100%;
+            height: 200px;
+            margin-top:-200px;
+            overflow-x: hidden;
+            position: relative;
+        }
+        .wave{
+          position: absolute;
+          display:block;
+          width:100%;
+          height:auto;
+            bottom:0px;
+        }
+        
+        .wave1{
+            border-bottom: 20px solid #F07E3F;
+            animation-delay: 0s;
+            animation-name: animation1;
+            animation-duration: 17s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index:-1;
+        }
+        
+        .wave2{
+            border-bottom: 20px solid #F07E3F;
+            animation-delay: 0s;
+            animation-name: animation2;
+            animation-duration: 17s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index:-1;
+        }
+        
+        
+        .wave3{
+            border-bottom: 10px solid #DC4634;
+            animation-delay: -5s;
+            animation-name: animation1;
+            animation-duration: 13s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index:-1;
+        }
+        .wave4{
+            border-bottom: 10px solid #DC4634;
+            animation-delay: -5s;
+            animation-name: animation2;
+            animation-duration: 13s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index:-1;
+        }
+        
+        
+        .wave5{
+            bottom:0px;
+          animation-delay: -10s;
+          animation-name: animation1;
+          animation-duration: 7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          z-index:-1;
+        }
+        .wave6{
+            bottom:0px;
+          animation-delay: -10s;
+          animation-name: animation2;
+          animation-duration: 7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          z-index:-1;
+        }
+        
+        @keyframes animation1 {
+          0%   {left:0%}
+          100% {left:100%}
+        }
+        @keyframes animation2 {
+          0%   {left:-100%}
+          100% {left:0%}
+        }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -321,7 +408,7 @@
         </div>
     </section>
     <section id="SERVICIOS" class="container">   
-        <div style="width:100%;background-color: rgba(0,0,0,0.1);border-radius:8px;margin:2rem;padding:1rem">
+        <div style="width:100%;background-color: rgba(100,100,100,0.1);border-radius:8px;margin:2rem;padding:1rem">
             <h2>Algunos de nuestros servicios más populares</h2>
             <p style="font-size:small">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle serviciosa su medida.</p>
         </div>
@@ -473,7 +560,7 @@
             <div class="ventana derecha">
                 <div class="ventana-header">
                     <div class="ventana-title">
-                        Cómo lo trabajamos
+                        Cómo trabajamos
                     </div>
                     <div class="ventana-button">
                         <i class="material-icons">remove</i>
@@ -505,6 +592,28 @@
             </div>
         </div>
     </section>
+    <div id="wave-container">
+        <svg viewBox="0 0 2200 100" class="wave wave1">
+            <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+        </svg>
+        <svg viewBox="0 0 2200 100" class="wave wave2">
+            <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+        </svg>
+    
+        <svg viewBox="0 0 2200 100" class="wave wave3">
+            <path fill="#DC4634" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+        </svg>
+        <svg viewBox="0 0 2200 100" class="wave wave4">
+            <path fill="#DC4634" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+        </svg>
+    
+        <svg viewBox="0 0 2200 100" class="wave wave5">
+            <path fill="#C60729" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+        </svg>
+        <svg viewBox="0 0 2200 100" class="wave wave6">
+            <path fill="#C60729" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+        </svg>    
+    </div>
     <div id="FOOTER">
         <div class="container">
             <div class="row">
