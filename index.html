@@ -10,15 +10,18 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="icomoon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title>Codigo Minga [Cooperativa]</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Código Minga [Cooperativa Digital]</title>
     <style>
         *{
             font-family: 'Poppins', sans-serif;
         }
 
-        body{
-            background-color: #F4F4F4;
-        }  
+        html,body{
+            padding: 0px;
+            margin: 0px;
+            background: linear-gradient(0deg, rgb(38, 43, 104) 0%, rgb(5, 151, 156) 66%);
+        }
 
         .navbar-light .navbar-nav .nav-link{
             color:#C60729;
@@ -193,6 +196,9 @@
             #CONTENEDOR-ventana .derecha{
                 left:auto;
             }
+            #NOSOTROS{
+                padding:0px;
+            }
         }
 
         .ventana-body{
@@ -203,8 +209,8 @@
             margin-bottom:5px;
             display: block;
             position: relative;
-            height: 670px;
-            min-width: 300px;
+            height: 650px;
+            min-width: 280px;
             width: calc(100% - 10px);
             overflow: hidden;
         }
@@ -270,11 +276,13 @@
         }
 
         #CONTENEDOR-ventana{
-            display: block;
+            display: flex;
             position: relative;
             width: 100%;
             height: 855px;
             overflow: hidden;
+            justify-content: center;
+            padding:0px;
         }
         #FOOTER{
             display: block;
@@ -283,25 +291,50 @@
             background: linear-gradient(0deg, #F38540 0%, #C60729 66%);
             color:white;
         }
+        .title-div{
+            width:100%;
+            background-color: #E5E5E5;
+            border-radius:8px;
+            margin:2rem;
+            padding:1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .title-div p{
+            margin:0px;
+        }
+
+        .title-div .btn{
+            padding:15px;            
+            text-transform: uppercase;
+        }
     </style>
     <style> 
-        #wave-container{
-            width: 100%;
-            height: 200px;
-            margin-top:-200px;
-            overflow-x: hidden;
+        section{
             position: relative;
+            z-index:100;
+        }
+        .main-footer{
+            position:-webkit-sticky; 
+            position:sticky; 
+            bottom:0; 
+            width: 100%;
+            height:500px;
+            margin-top:-500px;
+            overflow: hidden;
         }
         .wave{
-          position: absolute;
-          display:block;
-          width:100%;
-          height:auto;
+            position: absolute;
+            display:block;
+            width:100%;
+            height:auto;
             bottom:0px;
         }
         
         .wave1{
-            border-bottom: 20px solid #F07E3F;
+            bottom: 4VW;
             animation-delay: 0s;
             animation-name: animation1;
             animation-duration: 17s;
@@ -311,7 +344,7 @@
         }
         
         .wave2{
-            border-bottom: 20px solid #F07E3F;
+            bottom: 4VW;
             animation-delay: 0s;
             animation-name: animation2;
             animation-duration: 17s;
@@ -322,7 +355,7 @@
         
         
         .wave3{
-            border-bottom: 10px solid #DC4634;
+            bottom: 2VW;
             animation-delay: -5s;
             animation-name: animation1;
             animation-duration: 13s;
@@ -331,7 +364,7 @@
             z-index:-1;
         }
         .wave4{
-            border-bottom: 10px solid #DC4634;
+            bottom: 2VW;
             animation-delay: -5s;
             animation-name: animation2;
             animation-duration: 13s;
@@ -342,7 +375,6 @@
         
         
         .wave5{
-            bottom:0px;
           animation-delay: -10s;
           animation-name: animation1;
           animation-duration: 7s;
@@ -351,13 +383,29 @@
           z-index:-1;
         }
         .wave6{
-            bottom:0px;
           animation-delay: -10s;
           animation-name: animation2;
           animation-duration: 7s;
           animation-iteration-count: infinite;
           animation-timing-function: linear;
           z-index:-1;
+        }
+        #bote{
+            width: 100%;
+            animation-name: animationbote;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            transition: right 0.1s linear 0.1s;
+        }
+        
+        #bote-box{
+            position: absolute;
+            display:block;
+            bottom: 4.5VW;
+            z-index:-1;
+            width: 20%;
+            right: 0px;
+            transition: right 1s linear;
         }
         
         @keyframes animation1 {
@@ -368,12 +416,30 @@
           0%   {left:-100%}
           100% {left:0%}
         }
+        @keyframes animationbote {
+            0%{    
+                -webkit-transform:rotate(8deg);
+                -moz-transform:rotate(8deg); 
+                -o-transform:rotate(8deg);
+            }
+            50% {
+
+                -webkit-transform:rotate(-8deg);
+                -moz-transform:rotate(-8deg); 
+                -o-transform:rotate(-8deg);
+            }
+            100%{    
+                -webkit-transform:rotate(8deg);
+                -moz-transform:rotate(8deg); 
+                -o-transform:rotate(8deg);
+            }
+        }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <img class="navbar-brand" src="img/logo-navbar.png" height="55"></img>
+            <img src="img/navbar-logo.png" height="55"></img>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -382,237 +448,255 @@
                 <a class="nav-item nav-link" href="#INICIO">INICIO</a>
                 <a class="nav-item nav-link" href="#SERVICIOS">SERVICIOS</a>
                 <a class="nav-item nav-link" href="#NOSOTROS">NOSOTROS</a>
-                <a class="nav-item nav-link" href="#BLOG">BLOG</a>
-                <a class="nav-item nav-link" href="#CONTACTO">CONTACTO</a>
+                <a class="nav-item nav-link" href="#FOOTER">CONTACTO</a>
                 <i class="material-icons nav-item nav-link">search</i>
               </div>
             </div>
         </div>
-      </nav>
-    <section id="INICIO" class="container">
-        <div class="row">
-            <div class="col-12 col-sm-5">
-                <img src="img/trabajando.gif" style="width:80%"/>
+    </nav>
+    <div>
+        <section id="INICIO" class="container">
+            <div class="row">
+                <div class="col-12 col-sm-7"  style="
+                display: flex;
+                justify-content: center;
+                align-items: center;">
+                    <div>
+                        <h3>Cooperativa Digital</h3>
+                        <h1 class="text-red">Conectando</h1>
+                        <h1 class="text-red"><b>Técnica y Creatividad</b></h1>
+                        <h5>Déjanos llevar tu proyecto en nuestra Minga</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-5">
+                    <img src="img/codminga.svg" style="width:100%;padding:20px"/>
+                </div>
             </div>
-            <div class="col-12 col-sm-7"  style="
-            display: flex;
-            justify-content: center;
-            align-items: center;">
+        </section>
+        <section id="SERVICIOS" class="container">   
+            <div class="title-div">
                 <div>
-                    <h3>Cooperativa Digital</h3>
-                    <h1 class="text-red">Conectando</h1>
-                    <h1 class="text-red"><b>Técnica y Creatividad</b></h1>
-                    <h5>Déjanos llevar tu proyecto en nuestra Minga</h5>
+                    <h2>Algunos de nuestros servicios más populares</h2>
+                    <p style="font-size:small">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle serviciosa su medida.</p>
+                </div>
+                <a class="btn btn-dangger" style="background-color: #EA0435;color:white;width: 180px;">Ver más</a>
+            </div>
+            <div class="material-card">
+                <img src="img/clases.svg"/>
+                <h5 align="center" style="height: 48px;">ASESORÍAS Y TALLERES</h5>
+                <div style="font-size: small;text-align: center;">
+                    Analizamos tu producto o servicio para detectar puntos perjudiciales y ofrecerte oportunidades de mejora.
+                </div>
+                <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
+            </div>
+            <div class="material-card">
+                <img src="img/web.svg"/>
+                <h5 align="center" style="height: 48px;">SITIOS WEB Y WEB APPS</h5>
+                <div style="font-size: small;text-align: center;">
+                    Construimos webs con lo mejor de las apps y apps con las ventajas de una web. Con alta calidad, estables y eficientes para tu proyecto
+                </div>
+                <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
+            </div>
+            <div class="material-card">
+                <img src="img/diseno.svg"/>
+                <h5 align="center" style="height: 48px;">DISEÑO DIGITAL </br></h5>
+                <div style="font-size: small;text-align: center;">
+                    Contemplamos el producto o servicio de forma global para ofrecerte un resultado óptimo, pasando del branding al sistema de diseño.
+                </div>
+                <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
+            </div>
+            <div class="material-card">
+                <img src="img/soporte.svg"/>
+                <h5 align="center" style="height: 48px;">SOPORTE Y MANTENCIÓN</h5>
+                <div style="font-size: small;text-align: center;">
+                    Nuestro compromiso no termina con la finalizacion del proyecto, te acompañamos más allá de su entrega.
+                </div>
+                <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
+            </div>
+        </section>
+        <section id="NOSOTROS" class="container">        
+            
+            <div class="title-div">
+                <div style="width: 100%;">
+                    <h1 class="text-red" align="center">¿POR QUÉ CÓDIGO MINGA?</h1>
+                    <h6  align="center">Porque creemos que un buen proyecto..</h6>
+                    <h6 class="text-red"  align="center">Se trabaja día a día aprendiendo e investigando.</h6>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="SERVICIOS" class="container">   
-        <div style="width:100%;background-color: rgba(100,100,100,0.1);border-radius:8px;margin:2rem;padding:1rem">
-            <h2>Algunos de nuestros servicios más populares</h2>
-            <p style="font-size:small">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle serviciosa su medida.</p>
-        </div>
-        <div class="material-card">
-            <img src="img/clases.svg"/>
-            <h5 align="center" style="height: 48px;">ASESORÍAS Y TALLERES</h5>
-            <div style="font-size: small;text-align: center;">
-                Analizamos tu producto o servicio para detectar puntos perjudiciales y ofrecerte oportunidades de mejora.
-            </div>
-            <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
-        </div>
-        <div class="material-card">
-            <img src="img/web.svg"/>
-            <h5 align="center" style="height: 48px;">SITIOS WEB Y WEB APPS</h5>
-            <div style="font-size: small;text-align: center;">
-                Construimos webs con lo mejor de las apps y apps con las ventajas de una web. Con alta calidad, estables y eficientes para tu proyecto
-            </div>
-            <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
-        </div>
-        <div class="material-card">
-            <img src="img/diseno.svg"/>
-            <h5 align="center" style="height: 48px;">DISEÑO DIGITAL </br></h5>
-            <div style="font-size: small;text-align: center;">
-                Contemplamos el producto o servicio de forma global para ofrecerte un resultado óptimo, pasando del branding al sistema de diseño.
-            </div>
-            <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
-        </div>
-        <div class="material-card">
-            <img src="img/soporte.svg"/>
-            <h5 align="center" style="height: 48px;">SOPORTE Y MANTENCIÓN</h5>
-            <div style="font-size: small;text-align: center;">
-                Nuestro compromiso no termina con la finalizacion del proyecto, te acompañamos más allá de su entrega.
-            </div>
-            <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
-        </div>
-    </section>
-    <section id="NOSOTROS" class="container">        
-        <h1 class="text-red" align="center">¿POR QUÉ CÓDIGO MINGA?</h1>
-        <h6  align="center">Porque creemos que un buen proyecto..</h6>
-        <h6 class="text-red"  align="center">Se trabaja día a día aprendiendo e investigando.</h6>
-        <div id="CONTENEDOR-ventana">
-            <div class="ventana activa">
-                <div class="ventana-header">
-                    <div class="ventana-title">
-                        Parte de nuestro equipo
+            <div id="CONTENEDOR-ventana">
+                <div class="ventana activa">
+                    <div class="ventana-header">
+                        <div class="ventana-title">
+                            Parte de nuestro equipo
+                        </div>
+                        <div class="ventana-button">
+                            <i class="material-icons">remove</i>
+                            <i class="material-icons">filter_none</i>
+                            <i class="material-icons">close</i>
+                        </div>
                     </div>
-                    <div class="ventana-button">
-                        <i class="material-icons">remove</i>
-                        <i class="material-icons">filter_none</i>
-                        <i class="material-icons">close</i>
+                    <div class="ventana-body">
+                        <div class="ventana-contenido">
+    
+                            <div class="presentacion-card" style="background-image: url('img/robertosierra.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Roberto Sierra</div>
+                            </div>
+                            
+                            <div class="presentacion-card" style="background-image: url('img/osvaldoalvarado.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Osvaldo Alvarado</div>
+                            </div>
+                            <div class="presentacion-card" style="background-image: url('img/sebastianvera.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Sebastián Vera</div>
+                            </div>
+                            <div class="presentacion-card" style="background-image: url('img/sebastianhenriquez.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Sebastián Henriquez</div>
+                            </div>
+                            <div class="presentacion-card" style="background-image: url('img/alejandrasanz.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Alejandra Sanz</div>
+                            </div>
+                            <div class="presentacion-card" style="background-image: url('img/felipedavidson.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Felipe Davidson</div>
+                            </div>
+                            <div class="presentacion-card" style="background-image: url('img/nicolasojeda.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Nicolas Ojeda</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="ventana-body">
-                    <div class="ventana-contenido">
+                <div class="ventana izquierda">
+                    <div class="ventana-header">
+                        <div class="ventana-title">
+                            ¿Quiénes somos?
+                        </div>
+                        <div class="ventana-button">
+                            <i class="material-icons">remove</i>
+                            <i class="material-icons">filter_none</i>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </div>
+                    <div class="ventana-body">
+                        <div class="ventana-contenido">
+                            <div style="background-color: #EA0435; width:100%;height:300px;margin-bottom:2rem">
+                                <img src="img/minga1.jpg" style="display:block;width:100%;height:300px;opacity: 0.4;object-fit: cover;"/>
+                            </div>
+                            <ul class="redli">
+                                <li>
+                                    Somos curiosos, vemos las posibilidades y los progresos en el proceso creativo y el trabajo en equipo. Nuestra curiosidad y ganas de aprender hace que nos adaptemos y evolucionemos día a día.
+                                </li>
+                                <li>
+                                    Somos humanos, nos encanta trabajar con personas y para personas. Con sinceridad y realismo. Con exigencia pero con proximidad. Más que proyectos, buscamos y cultivamos relaciones a largo plazo.
+                                </li>
+                                <li>
+                                    Somos un equipo entregado a cada proyecto de inicio a fin. Unimos creatividad y técnica para hacer experiencias digitales con un diseño de calidad y un desarrollo óptimo y eficiente. Especialistas en usabilidad, arquitectura de la información y programación avanzada, usamos metodologías ágiles para asegurar la calidad de los proyectos y del equipo.
+                                </li>
+                                <li>
+                                    Somos expertos, tenemos la capacidad de experimentar y de hacer posibles ideas innovadoras. Nos basamos en la experiencia para solucionar los problemas y llevar nuestros proyectos a buen puerto.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ventana derecha">
+                    <div class="ventana-header">
+                        <div class="ventana-title">
+                            Cómo trabajamos
+                        </div>
+                        <div class="ventana-button">
+                            <i class="material-icons">remove</i>
+                            <i class="material-icons">filter_none</i>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </div>
+                    <div class="ventana-body">
+                        <div class="ventana-contenido">
+                            <div style="background-color: #F69E4D; width:100%;height:300px;margin-bottom:2rem">
+                                <img src="img/minga2.jpg" style="display:block;width:100%;height:300px;opacity: 0.4;object-fit: cover;"/>
+                            </div>
+                            <ul class="yellowli">
+                                <li>
+                                    Investigamos: Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este.
+                                </li>
+                                <li>
+                                    Arquitectura de la información (AI): Interiorizamos y conceptualizamos los proyectos para organizar la información y definir su estructura. 
+                                </li>
+                                <li>
+                                    Experiencia de usuario (UX): Estudiamos las interacciones y percepciones del usuario para garantizar una experiencia satisfactoria.
+                                </li>
+                                <li>
+                                    Diseño de Interfaz (UI): Creemos que la forma y el contenido van de la mano a través de la inspiración, la creatividad, el detalle y la interacción.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-footer">
+            <svg viewBox="0 0 2200 100" class="wave wave1">
+                <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
 
-                        <div class="presentacion-card" style="background-image: url('img/robertosierra.jpg');">
-                            <div class="presentecion-body">
-                                <div class="presentacion-info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                </div>
-                            </div>
-                            <div class="presentacion-name">Roberto Sierra</div>
-                        </div>
-                        
-                        <div class="presentacion-card" style="background-image: url('img/osvaldoalvarado.jpg');">
-                            <div class="presentecion-body">
-                                <div class="presentacion-info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                </div>
-                            </div>
-                            <div class="presentacion-name">Osvaldo Alvarado</div>
-                        </div>
-                        <div class="presentacion-card" style="background-image: url('img/sebastianvera.jpg');">
-                            <div class="presentecion-body">
-                                <div class="presentacion-info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                </div>
-                            </div>
-                            <div class="presentacion-name">Sebastián Vera</div>
-                        </div>
-                        <div class="presentacion-card" style="background-image: url('img/sebastianhenriquez.jpg');">
-                            <div class="presentecion-body">
-                                <div class="presentacion-info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                </div>
-                            </div>
-                            <div class="presentacion-name">Sebastián Henriquez</div>
-                        </div>
-                        <div class="presentacion-card" style="background-image: url('img/alejandrasanz.jpg');">
-                            <div class="presentecion-body">
-                                <div class="presentacion-info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                </div>
-                            </div>
-                            <div class="presentacion-name">Alejandra Sanz</div>
-                        </div>
-                        <div class="presentacion-card" style="background-image: url('img/felipedavidson.jpg');">
-                            <div class="presentecion-body">
-                                <div class="presentacion-info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                </div>
-                            </div>
-                            <div class="presentacion-name">Felipe Davidson</div>
-                        </div>
-                        <div class="presentacion-card" style="background-image: url('img/nicolasojeda.jpg');">
-                            <div class="presentecion-body">
-                                <div class="presentacion-info">
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                </div>
-                            </div>
-                            <div class="presentacion-name">Nicolas Ojeda</div>
-                        </div>
-                    </div>
-                </div>
+            <svg viewBox="0 0 2200 100" class="wave wave2">
+                <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+            <div id="bote-box">
+                <img id="bote" src="img/bote.svg"/>
             </div>
-            <div class="ventana izquierda">
-                <div class="ventana-header">
-                    <div class="ventana-title">
-                        ¿Quiénes somos?
-                    </div>
-                    <div class="ventana-button">
-                        <i class="material-icons">remove</i>
-                        <i class="material-icons">filter_none</i>
-                        <i class="material-icons">close</i>
-                    </div>
-                </div>
-                <div class="ventana-body">
-                    <div class="ventana-contenido">
-                        <div style="background-color: #EA0435; width:100%;height:300px;margin-bottom:2rem">
-                            <img src="img/minga1.jpg" style="display:block;width:100%;height:300px;opacity: 0.4;object-fit: cover;"/>
-                        </div>
-                        <ul class="redli">
-                            <li>
-                                Somos curiosos, vemos las posibilidades y los progresos en el proceso creativo y el trabajo en equipo. Nuestra curiosidad y ganas de aprender hace que nos adaptemos y evolucionemos día a día.
-                            </li>
-                            <li>
-                                Somos humanos, nos encanta trabajar con personas y para personas. Con sinceridad y realismo. Con exigencia pero con proximidad. Más que proyectos, buscamos y cultivamos relaciones a largo plazo.
-                            </li>
-                            <li>
-                                Somos un equipo entregado a cada proyecto de inicio a fin. Unimos creatividad y técnica para hacer experiencias digitales con un diseño de calidad y un desarrollo óptimo y eficiente. Especialistas en usabilidad, arquitectura de la información y programación avanzada, usamos metodologías ágiles para asegurar la calidad de los proyectos y del equipo.
-                            </li>
-                            <li>
-                                Somos expertos, tenemos la capacidad de experimentar y de hacer posibles ideas innovadoras. Nos basamos en la experiencia para solucionar los problemas y llevar nuestros proyectos a buen puerto.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="ventana derecha">
-                <div class="ventana-header">
-                    <div class="ventana-title">
-                        Cómo trabajamos
-                    </div>
-                    <div class="ventana-button">
-                        <i class="material-icons">remove</i>
-                        <i class="material-icons">filter_none</i>
-                        <i class="material-icons">close</i>
-                    </div>
-                </div>
-                <div class="ventana-body">
-                    <div class="ventana-contenido">
-                        <div style="background-color: #F69E4D; width:100%;height:300px;margin-bottom:2rem">
-                            <img src="img/minga2.jpg" style="display:block;width:100%;height:300px;opacity: 0.4;object-fit: cover;"/>
-                        </div>
-                        <ul class="yellowli">
-                            <li>
-                                Investigamos: Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este.
-                            </li>
-                            <li>
-                                Arquitectura de la información (AI): Interiorizamos y conceptualizamos los proyectos para organizar la información y definir su estructura. 
-                            </li>
-                            <li>
-                                Experiencia de usuario (UX): Estudiamos las interacciones y percepciones del usuario para garantizar una experiencia satisfactoria.
-                            </li>
-                            <li>
-                                Diseño de Interfaz (UI): Creemos que la forma y el contenido van de la mano a través de la inspiración, la creatividad, el detalle y la interacción.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
+            <svg viewBox="0 0 2200 100" class="wave wave3">
+                <path fill="#DC4634" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+
+            <svg viewBox="0 0 2200 100" class="wave wave4">
+                <path fill="#DC4634" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+
+            <svg viewBox="0 0 2200 100" class="wave wave5">
+                <path fill="#C60729" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+            <svg viewBox="0 0 2200 100" class="wave wave6">
+                <path fill="#C60729" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>    
         </div>
-    </section>
-    <div id="wave-container">
-        <svg viewBox="0 0 2200 100" class="wave wave1">
-            <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
-        </svg>
-        <svg viewBox="0 0 2200 100" class="wave wave2">
-            <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
-        </svg>
-    
-        <svg viewBox="0 0 2200 100" class="wave wave3">
-            <path fill="#DC4634" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
-        </svg>
-        <svg viewBox="0 0 2200 100" class="wave wave4">
-            <path fill="#DC4634" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
-        </svg>
-    
-        <svg viewBox="0 0 2200 100" class="wave wave5">
-            <path fill="#C60729" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
-        </svg>
-        <svg viewBox="0 0 2200 100" class="wave wave6">
-            <path fill="#C60729" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
-        </svg>    
     </div>
     <div id="FOOTER">
         <div class="container">
@@ -649,6 +733,16 @@
                     selecccionada.removeClass(clase).addClass('activa');
                 }
             });
+        });
+
+        
+        let bote = document.getElementById("bote-box");
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            var limit = (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+            var scrollPorcentual = (value/limit)*100 -20;
+            bote.style.right = "calc("+0.8*scrollPorcentual+"% + "+0.8*bote.offsetWidth+"px)";
+            console.log(bote.offsetWidth)
         });
     </script>
   </body>
