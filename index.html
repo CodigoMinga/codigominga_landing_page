@@ -468,8 +468,10 @@
                 align-items: center;">
                     <div>
                         <h3>Cooperativa Digital</h3>
+                        <br></br>
                         <h1 class="text-red">Conectando</h1>
                         <h1 class="text-red"><b>Técnica y Creatividad</b></h1>
+                        <br></br>
                         <h5>Déjanos llevar tu proyecto en nuestra Minga</h5>
                     </div>
                 </div>
@@ -524,7 +526,7 @@
                 <div style="width: 100%;">
                     <h1 class="text-red" align="center">¿POR QUÉ CÓDIGO MINGA?</h1>
                     <h6  align="center">Porque creemos que un buen proyecto..</h6>
-                    <h6 class="text-red"  align="center">Se trabaja día a día aprendiendo e investigando.</h6>
+                    <h5 id="texto-cambia" class="text-red"  align="center" style="height:60px">Se trabaja día a día aprendiendo e investigando.</h5>
                 </div>
             </div>
         </section>
@@ -741,7 +743,25 @@
             });
         });
 
-        
+        let cambia = $("#texto-cambia");
+        var iteracion=0;
+        window.setInterval(function(){
+
+            var texto = [
+                "Se trabaja día a día aprendiendo e investigando.",
+                "Es abierto y colaborativo.",
+                "Requiere tiempo y constancia.",
+                "Sale de mentes inquietas y humildes.",
+                "Es innovador."
+            ];
+            cambia.html(texto[iteracion]);
+            iteracion++;
+            if(iteracion>texto.length){
+                iteracion=0;
+            }
+
+        },5000);
+
         //ESTILOS movimiento bote por scroll
         let bote = document.getElementById("bote-box");
         window.addEventListener('scroll',function(){
