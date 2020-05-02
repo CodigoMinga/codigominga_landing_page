@@ -317,6 +317,7 @@
             text-transform: uppercase;
         }
     </style>
+    <!--ESTILOS BOTE DE ACA PARA ABAJO-->
     <style> 
         .main-footer{
             position:-webkit-sticky; 
@@ -393,6 +394,7 @@
           animation-timing-function: linear;
           z-index:1000;
         }
+
         #bote{
             width: 100%;
             animation-name: animationbote;
@@ -740,13 +742,17 @@
         });
 
         
+        //ESTILOS movimiento bote por scroll
         let bote = document.getElementById("bote-box");
         window.addEventListener('scroll',function(){
+            //valor scroll
             var value = window.scrollY;
+            //limite Scroll
             var limit = (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+            //porcentaje de avaze scroll - 20% del ancho del bote
             var scrollPorcentual = (value/limit)*100 -20;
+            //ingresa al Right el calculo del 80% del scroll - el 80% del ancho del bote
             bote.style.right = "calc("+0.8*scrollPorcentual+"% + "+0.8*bote.offsetWidth+"px)";
-            console.log(bote.offsetWidth)
         });
     </script>
   </body>
