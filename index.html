@@ -81,6 +81,25 @@
             margin-right: auto;
         }
 
+        .material-card:hover img{
+            animation-name: animationimg;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animationimg {
+            0%,100%{    
+                -webkit-transform:rotate(5deg);
+                -moz-transform:rotate(5deg);
+                -o-transform:rotate(5deg);
+            }
+            50% {
+                -webkit-transform:rotate(-5deg);
+                -moz-transform:rotate(-5deg);
+                -o-transform:rotate(-5deg);
+            }
+        }
+
         .presentacion-card {
             background: #fff;
             border-radius: 2px;
@@ -94,7 +113,7 @@
 	        box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
             border-radius: 8px;
             margin-bottom:2rem;
-            background-repeat: no-repeat;
+            background-position: center; 
             background-size: cover;
         }
         .presentecion-body{
@@ -122,15 +141,17 @@
         .presentacion-info{
             position: absolute;
             bottom:-250px;
-            padding: 20px;
+            padding: 10px;
             height: 250px;
             width: 220px;
-            font-size: 0.8rem;
+            font-size: 1rem;
             overflow-y: scroll;
             background-color: rgba(50, 94, 127,0.9);
             color:white;
             transition: bottom 0.5s linear 0.1s;
         }
+
+
 
         .presentacion-card:hover  .presentacion-info{
             bottom:0px;
@@ -268,6 +289,19 @@
             width: 1.2em;
             margin-left: -1em;
         }
+        
+        .submenu li{
+            list-style-type: none;
+        }
+
+        .submenu li::before{
+            content: "\27A5";
+            color: #F38540;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1.2em;
+            margin-left: -1em;
+        }
 
         .ventana-header{
             margin-left:5px;
@@ -324,22 +358,35 @@
             background: linear-gradient(0deg, #F38540 0%, #C60729 66%);
             color:white;
         }
+        .social{
+            font-size: xx-large;
+            margin-top: 1rem;
+            margin-bottom: 0px;
+        }
 
-        #FOOTER a:link {
+        #FOOTER a:link, .social a:link {
             text-decoration: none;
             color:white;
         }
-        #FOOTER a{
+        #FOOTER a,.social a{
             color:white;
             text-decoration: none;
         }
-        #FOOTER a:visited {
+        #FOOTER a:visited, .social a:visited{
             color:white;
             text-decoration: none;
         }
-        #FOOTER a:active {
+        #FOOTER a:active, .social a:active{
             color:white;
-            text-decoration: underline;
+            text-decoration: none;
+        }
+        #FOOTER a:hover{
+            color:#F69E4D;
+            text-decoration: none;
+        }        
+        .social a:hover{
+            color:#E90735;
+            text-decoration: none;
         }
 
         #sub-footer{
@@ -628,23 +675,51 @@
                     <div class="ventana-body">
                         <div class="ventana-contenido">
     
+                            <div class="presentacion-card" style="background-image: url('img/osvaldoalvarado.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Desarrollador, apasionado por la tecnología y la ciencia. En constante búsqueda de nuevas tecnologías.
+                                        <p class="social"><a href="https://www.linkedin.com/in/osvaldo-alvarado-426819167/" target="_blank" ><span  class="icon-linkedin"></span></a></p>
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Osvaldo Alvarado</div>
+                            </div>
+
+                            <div class="presentacion-card" style="background-image: url('img/alejandrasanz.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Publicista de profesión, dedicada a la Dirección de Arte Digital, con carácter, muy motivada, emprendedora y con ganas de superarse cada día. Profesionalmente autodidacta, dinámica y flexible.  
+                                        <p class="social">
+                                            <a href="https://www.linkedin.com/in/alejandra-sukii-sanz-39ab0574/" target="_blank" ><span  class="icon-linkedin"></span></a>
+                                            <a href="https://www.instagram.com/sukiisanz/" target="_blank" ><span  class="icon-instagram"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Alejandra Sanz</div>
+                            </div>
+
                             <div class="presentacion-card" style="background-image: url('img/robertosierra.jpg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Ing. Civil en Automatización con 6 años de experencia laboral, variados conocimientos en el área de automatización y control industrial, tanto en instrumentación y programación de PLCs (Allen bradley, Schneider, Siemens), ademas cuenta con conocimientos de programación web y de aplicaciones moviles enfocadas a soluciones industriales.   
+                                        Ing. Civil en Automatización con 6 años de experencia laboral, variados conocimientos en el área de automatización y control industrial, tanto en instrumentación y programación de PLCs (Allen bradley, Schneider, Siemens), ademas cuenta con conocimientos de programación web y de aplicaciones moviles enfocadas a soluciones industriales.
+                                        <p class="social">
+                                            <a href="https://www.linkedin.com/in/roberto-sierra-vera-2940a9a0/" target="_blank" ><span  class="icon-linkedin"></span></a>
+                                            <a href="https://www.instagram.com/raserober/" target="_blank" ><span  class="icon-instagram"></span></a>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Roberto Sierra</div>
-                            </div>
-                            
-                            <div class="presentacion-card" style="background-image: url('img/osvaldoalvarado.jpg');">
+                            </div>     
+
+                            <div class="presentacion-card" style="background-image: url('img/nicolasojeda.jpeg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
                                     </div>
                                 </div>
-                                <div class="presentacion-name">Osvaldo Alvarado</div>
+                                <div class="presentacion-name">Nicolas Ojeda</div>
                             </div>
+
                             <div class="presentacion-card" style="background-image: url('img/sebastianvera.jpg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
@@ -652,7 +727,8 @@
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Sebastián Vera</div>
-                            </div>
+                            </div>                       
+
                             <div class="presentacion-card" style="background-image: url('img/sebastianhenriquez.jpg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
@@ -661,29 +737,13 @@
                                 </div>
                                 <div class="presentacion-name">Sebastián Henriquez</div>
                             </div>
-                            <div class="presentacion-card" style="background-image: url('img/alejandrasanz.jpg');">
-                                <div class="presentecion-body">
-                                    <div class="presentacion-info">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                    </div>
-                                </div>
-                                <div class="presentacion-name">Alejandra Sanz</div>
-                            </div>
-                            <div class="presentacion-card" style="background-image: url('img/felipedavidson.jpg');">
+                            <div class="presentacion-card" style="background-image: url('img/felipedavidson.jpeg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Felipe Davidson</div>
-                            </div>
-                            <div class="presentacion-card" style="background-image: url('img/nicolasojeda.jpg');">
-                                <div class="presentecion-body">
-                                    <div class="presentacion-info">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
-                                    </div>
-                                </div>
-                                <div class="presentacion-name">Nicolas Ojeda</div>
                             </div>
                         </div>
                     </div>
@@ -799,7 +859,7 @@
                 </div>
                 <div class="col-12 col-sm-5 center mb-4">
                     <div>
-                        <h5 class="mb-4" style="color:rgb(124, 13, 24)">Nuestra Cooperativa</h5>
+                        <h5 class="mb-4" style="color:#F38540"><b>Nuestra Cooperativa</b></h5>
                         <ul class="submenu">
                             <li class="mb-3"><a href="#INICIO">Inicio</a></li>
                             <li class="mb-3"><a href="#SERVICIOS">Servicios</a></li>
@@ -814,7 +874,7 @@
             <div class="container">
                 <div id="sub-footer">
                     <div  style="font-size:x-small;">2020 Código Minga</div>
-                    <a  href="#facebook"><span class="icon-facebook2"></span></a>
+                    <a  href="https://www.facebook.com/codigominga/" target="_blank"><span class="icon-facebook2"></span></a>
                     <a  href="#instagram"><span  class="icon-instagram"></span></a>
                     <a  href="#github"><span  class="icon-github"></span></a>
                     <a  href="#linkedin"><span  class="icon-linkedin"></span></a>
