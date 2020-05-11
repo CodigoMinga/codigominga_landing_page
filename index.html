@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html class="no-js">
   <head>
@@ -209,4 +210,967 @@
             
     
     </body>
+=======
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="icomoon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Código Minga [Cooperativa Digital]</title>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html,body{
+            padding: 0px;
+            margin: 0px;
+            background: linear-gradient(0deg, rgba(38, 43, 104,1) 0%, rgba(234, 247, 248,1) 66%);
+        }
+
+        .navbar-light .navbar-nav .nav-link{
+            color:#C60729;
+            font-weight: bold;
+        }
+
+        .navbar-light .navbar-nav .nav-link.active{
+            color:#C60729;
+        }
+
+        .navbar-right{
+            justify-content:flex-end;
+        }
+
+        .center{
+            display: flex;
+            justify-content:center;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .material-card {
+            background: #fff;
+            display: inline-block;
+            margin: 0.6rem;
+            position: relative;
+            width: 250px;	
+            -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
+	        -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
+	        box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
+            border-radius: 0px;
+            margin-bottom:2rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding:20px;
+            padding-bottom: 80px;
+        }
+
+        .material-card .btn{
+            position: absolute;
+            bottom:-28px;
+            width:180px;
+            left:calc(50% - 90px);
+            padding: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size:0.8rem;
+            color:white;
+            -moz-box-shadow:    inset 6px 8px 6px -6px #F38540;
+            -webkit-box-shadow: inset 6px 8px 6px -6px #F38540;
+            box-shadow:         inset 6px 8px 6px -6px #F38540;
+            visibility: hidden;
+        }
+
+        .material-card img{
+            width:40%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .material-card:hover img{
+            animation-name: animationimg;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes animationimg {
+            0%,100%{    
+                -webkit-transform:rotate(5deg);
+                -moz-transform:rotate(5deg);
+                -o-transform:rotate(5deg);
+            }
+            50% {
+                -webkit-transform:rotate(-5deg);
+                -moz-transform:rotate(-5deg);
+                -o-transform:rotate(-5deg);
+            }
+        }
+
+        .presentacion-card {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            height: 250px;
+            margin: 1rem;
+            position: relative;
+            width: 200px;	
+            -webkit-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
+	        -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
+	        box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
+            border-radius: 8px;
+            margin-bottom:2rem;
+            background-position: center; 
+            background-size: cover;
+        }
+        .presentecion-body{
+            display: block;
+            position: relative;
+            height: 250px;
+            width: 200px;	
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .presentacion-name{
+            position: absolute;
+            padding:10px;
+            bottom:-28px;
+            width:180px;
+            left:calc(50% - 90px);
+            border-radius: 5px;
+            color:white;
+            text-align: center;
+            background-color:#99A4A4;
+            transition: background-color 0.5s linear 0.1s;
+        }
+
+        .presentacion-info{
+            position: absolute;
+            bottom:-250px;
+            padding: 10px;
+            padding-bottom: 40px;
+            height: 250px;
+            width: 220px;
+            font-size: 1rem;
+            overflow-y: scroll;
+            background-color: rgba(50, 94, 127,0.9);
+            color:white;
+            transition: bottom 0.5s linear 0.1s;
+        }
+
+
+
+        .presentacion-card:hover  .presentacion-info{
+            bottom:0px;
+        }
+
+        .presentacion-card:hover  .presentacion-name{
+            background-color: #E90735;
+        }
+
+        section{
+            margin-bottom: 6rem;
+        }
+
+        #SERVICIOS{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            flex-wrap: wrap;
+        }
+
+        .text-red{
+            color:#C60729;
+            font-weight: bold;
+        }
+        .ventana{
+            background-color: #C2C8C9;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 1rem;
+            position: absolute;
+            min-width: 350px;
+            width: 66%;
+            top:50px;
+            left:calc(17% - 32px);
+            z-index: 500;
+            transition: left 0.5s linear 0.1s, top 0.5s linear 0.1s, right 0.5s linear 0.1s;
+        }
+        #CONTENEDOR-ventana .izquierda:hover, #CONTENEDOR-ventana .derecha:hover{
+            color: #325e7f;
+            opacity: 1;
+        }
+
+
+        #CONTENEDOR-ventana .activa{
+            top:100px;
+            z-index: 500;
+            background-color: #325e7f;
+            transition: left 0.5s linear 0.1s, top 0.5s linear 0.1s, right 0.5s linear 0.1s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        #CONTENEDOR-ventana .izquierda{
+            top:50px;
+            left:10px;
+            z-index: 450;
+            transition: left 0.5s linear 0.1s, top 0.5s linear 0.1s, right 0.5s linear 0.1s;
+            opacity: 0.8;
+        }
+        #CONTENEDOR-ventana .derecha{
+            top:0px;
+            left:calc(33% - 32px);
+            z-index: 400;
+            transition: left 0.5s linear 0.1s, top 0.5s linear 0.1s, right 0.5s linear 0.1s;
+            opacity: 0.6;
+        }
+        @media only screen and (max-width: 950px) {
+            .ventana{
+                width: 90%;
+                left:auto;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            #CONTENEDOR-ventana .activa{
+                left:auto;
+            }
+            #CONTENEDOR-ventana .izquierda{
+                left:auto;
+            }
+            #CONTENEDOR-ventana .derecha{
+                left:auto;
+            }
+            #NOSOTROS{
+                padding:0px;
+            }
+        }
+
+        .ventana-body{
+            background-color: white;
+            border-radius: 8px;
+            margin-left:5px;
+            margin-right:5px;
+            margin-bottom:5px;
+            display: block;
+            position: relative;
+            height: 650px;
+            min-width: 280px;
+            width: calc(100% - 10px);
+            overflow: hidden;
+        }
+
+        .ventana-contenido{
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+            background-color: #e7e1df;
+        }
+
+        .ventana-contenido li{
+            margin-bottom: 20px;
+            font-size: large;
+        }
+
+        .ventana-contenido ul {
+            list-style: none;
+        }
+
+        .ventana-contenido .redli li::before {
+            content: "\27A5";
+            color: #C60729;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1.2em;
+            margin-left: -1em;
+        }
+
+        .ventana-contenido .yellowli li::before {
+            content: "\27A5";
+            color: #F38540;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1.2em;
+            margin-left: -1em;
+        }
+        
+        .submenu li{
+            list-style-type: none;
+        }
+
+        .submenu li::before{
+            content: "\27A5";
+            color: #F38540;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1.2em;
+            margin-left: -1em;
+        }
+
+        .ventana-header{
+            margin-left:5px;
+            margin-right:5px;
+            padding: 10px;
+            display: block;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+        }
+
+        .ventana-title{
+            flex-grow: 1;
+            font-weight: bold;
+            color:#EDEDED;
+            font-size: 1.1rem;
+        }
+
+        .ventana-button{
+            color:#EDEDED;
+            font-size: 0.9rem;
+        }
+
+        .ventana-img{
+            background-position: center; 
+            background-size: cover;
+            width:100%;
+            height:300px;
+            margin-bottom:2rem;
+            -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+        }
+
+        #CONTENEDOR-ventana{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 855px;
+            overflow: hidden;
+            justify-content: center;
+            padding:0px;
+        }
+        #PORQUE{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 0px;
+        }
+        #FOOTER{
+            display: block;
+            width: 100%;
+            padding-top:20px;
+            background: linear-gradient(0deg, #F38540 0%, #C60729 66%);
+            color:white;
+        }
+        .social{
+            font-size: xx-large;
+            margin-top: 1rem;
+            margin-bottom: 0px;
+        }
+
+        #FOOTER a:link, .social a:link {
+            text-decoration: none;
+            color:white;
+        }
+        #FOOTER a,.social a{
+            color:white;
+            text-decoration: none;
+        }
+        #FOOTER a:visited, .social a:visited{
+            color:white;
+            text-decoration: none;
+        }
+        #FOOTER a:active, .social a:active{
+            color:white;
+            text-decoration: none;
+        }
+        #FOOTER a:hover{
+            color:#F69E4D;
+            text-decoration: none;
+        }        
+        .social a:hover{
+            color:#E90735;
+            text-decoration: none;
+        }
+
+        #sub-footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end ;
+            align-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+        #sub-footer div{
+            flex-grow:1;
+        }
+        
+        #sub-footer a{
+            margin: 5px;
+        }
+        .title-div{
+            width:100%;
+            background-color: #E5E5E5;
+            border-radius:8px;
+            margin:2rem;
+            padding:1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        
+        .title-div p{
+            margin:0px;
+        }
+
+        .title-div .btn{
+            padding:15px;            
+            text-transform: uppercase;
+        }
+    </style>
+    <!--ESTILOS BOTE DE ACA PARA ABAJO-->
+    <style> 
+        .main-footer{
+            position:-webkit-sticky; 
+            position:sticky; 
+            bottom:0; 
+            width: 100%;
+            height:500px;
+            margin-top:-500px;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .wave{
+            position: absolute;
+            display:block;
+            width:100%;
+            height:auto;
+            bottom:0px;
+        }
+        
+        .wave1{
+            bottom: 4VW;
+            animation-delay: 0s;
+            animation-name: animation1;
+            animation-duration: 17s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index:1000;
+        }
+        
+        .wave2{
+            bottom: 4VW;
+            animation-delay: 0s;
+            animation-name: animation2;
+            animation-duration: 17s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index:1000;
+        }
+        
+        
+        .wave3{
+            bottom: 2VW;
+            animation-delay: -5s;
+            animation-name: animation1;
+            animation-duration: 13s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index:1000;
+        }
+        .wave4{
+            bottom: 2VW;
+            animation-delay: -5s;
+            animation-name: animation2;
+            animation-duration: 13s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index:1000;
+        }
+        
+        
+        .wave5{
+          animation-delay: -10s;
+          animation-name: animation1;
+          animation-duration: 7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          z-index:1000;
+        }
+        .wave6{
+          animation-delay: -10s;
+          animation-name: animation2;
+          animation-duration: 7s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          z-index:1000;
+        }
+
+        #bote{
+            width: 100%;
+            animation-name: animationbote;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            transition: right 0.1s linear 0.1s;
+        }
+        
+        #bote-box{
+            position: absolute;
+            display:block;
+            bottom: 4.5VW;
+            z-index:1000;
+            width: 20%;
+            right: 0px;
+            transition: right 1s linear;
+        }
+        
+        @keyframes animation1 {
+          0%   {left:0%}
+          100% {left:100%}
+        }
+        @keyframes animation2 {
+          0%   {left:-100%}
+          100% {left:0%}
+        }
+        @keyframes animationbote {
+            0%{    
+                -webkit-transform:rotate(8deg);
+                -moz-transform:rotate(8deg); 
+                -o-transform:rotate(8deg);
+            }
+            50% {
+
+                -webkit-transform:rotate(-8deg);
+                -moz-transform:rotate(-8deg); 
+                -o-transform:rotate(-8deg);
+            }
+            100%{    
+                -webkit-transform:rotate(8deg);
+                -moz-transform:rotate(8deg); 
+                -o-transform:rotate(8deg);
+            }
+        }
+    </style>
+    <style>
+        .whatsapp{
+            position: fixed;
+            display:block;
+            width: 4rem;
+            height: 4rem;
+            background-image: url('img/WhatsApp.svg');
+            z-index: 9999;
+            right: 2rem;
+            bottom: 3rem;
+        }
+        
+        .whatsapp:hover{
+            animation-name: animationimg;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <img src="img/navbar-logo.png" height="55"></img>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-right" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#INICIO">INICIO</a>
+                <a class="nav-item nav-link" href="#SERVICIOS">SERVICIOS</a>
+                <a class="nav-item nav-link" href="#NOSOTROS">NOSOTROS</a>
+                <a class="nav-item nav-link" href="#FOOTER">CONTACTO</a>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <a  title='Contactanos por WhatsApp' class="whatsapp" href="https://api.whatsapp.com/send?phone=56973155545&amp;text=Hola%20quisiera%20realizar%20una%20consulta%20sobre%20sus%20servicios" target="_blank"></a>
+    <div>
+        <section id="INICIO" class="container">
+            <div class="row">
+                <div class="col-12 col-sm-7"  style="
+                display: flex;
+                justify-content: center;
+                align-items: center;">
+                    <div>
+                        <h3>Cooperativa Digital</h3>
+                        <br></br>
+                        <h1 class="text-red">Conectando</h1>
+                        <h1 class="text-red"><b>Técnica y Creatividad</b></h1>
+                        <br></br>
+                        <h5>Déjanos llevar tu proyecto en nuestra Minga</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-5">
+                    <img src="img/cm-1.svg" style="width:100%;padding:20px;"/>
+                </div>
+            </div>
+        </section>
+        <section id="SERVICIOS" class="container">   
+            <div class="title-div">
+                <div><!--style="max-width:800px">-->
+                    <h2>Algunos de nuestros servicios más populares</h2>
+                    <p style="font-size:large">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle serviciosa su medida.</p>
+                </div>
+                <div class="center" style="flex-grow: 1; display:none">
+                    <a class="btn btn-dangger" style="background-color: #EA0435;color:white;width: 180px;">Ver más</a>
+                </div>
+            </div>
+            <div class="material-card">
+                <div class="center">
+                    <img src="img/clases.svg"/>
+                </div>
+                <div class="center" style="height: 85px;">
+                    <h5 align="center"><b>Asesorias y Talleres</b></h5>
+                </div>
+                <div style="font-size: large;text-align: center;">
+                    Analizamos tu producto o servicio para detectar puntos perjudiciales y ofrecerte oportunidades de mejora.
+                </div>
+                <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
+            </div>
+            <div class="material-card">
+                <div class="center">
+                    <img src="img/web.svg"/>
+                </div>
+                <div class="center" style="height: 85px;">
+                    <h5 align="center"><b>Sitios Web y Aplicaciones</b></h5>
+                </div>
+                <div style="font-size: large;text-align: center;">
+                    Construimos webs con lo mejor de las apps y apps con las ventajas de una web. Con alta calidad, estables y eficientes para tu proyecto
+                </div>
+                <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
+            </div>
+            <div class="material-card">
+                <div class="center">
+                    <img src="img/diseno.svg"/>
+                </div>
+                <div class="center" style="height: 85px;">
+                    <h5 align="center"><b>Diseño digital</b></h5>
+                </div>
+                <div style="font-size: large;text-align: center;">
+                    Contemplamos el producto o servicio de forma global para ofrecerte un resultado óptimo, pasando del branding al sistema de diseño.
+                </div>
+                <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
+            </div>
+            <div class="material-card">
+                <div class="center">
+                    <img src="img/soporte.svg"/>
+                </div>
+                <div class="center" style="height: 85px;">
+                    <h5 align="center"><b>Soporte y Mantención</b></h5>
+                </div>
+                <div style="font-size: large;text-align: center;">
+                    Nuestro compromiso no termina con la finalizacion del proyecto, te acompañamos más allá de su entrega.
+                </div>
+                <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
+            </div>
+        </section>
+        <section id="PORQUE" class="container">
+            <div class="title-div">
+                <div style="width: 100%;">
+                    <h1 class="text-red" align="center">¿POR QUÉ CÓDIGO MINGA?</h1>
+                    <h6  align="center">Porque creemos que un buen proyecto..</h6>
+                    <div class="center" style="height:60px">
+                        <h5 id="texto-cambia" class="text-red"  align="center">Se trabaja día a día aprendiendo e investigando.</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="NOSOTROS" class="container">
+            <div id="CONTENEDOR-ventana">
+                <div class="ventana activa">
+                    <div class="ventana-header">
+                        <div class="ventana-title">
+                            Parte de nuestro equipo
+                        </div>
+                        <div class="ventana-button">
+                            <i class="material-icons">remove</i>
+                            <i class="material-icons">filter_none</i>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </div>
+                    <div class="ventana-body">
+                        <div class="ventana-contenido">
+    
+                            <div class="presentacion-card" style="background-image: url('img/osvaldoalvarado.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Desarrollador, apasionado por la tecnología y la ciencia. En constante búsqueda de nuevas tecnologías.
+                                        <p class="social">
+                                            <a href="https://www.linkedin.com/in/osvaldo-alvarado-426819167/" target="_blank" ><span  class="icon-linkedin"></span></a>
+                                            <a href="https://github.com/osvaldoalvaradodev/" target="_blank" ><span  class="icon-github"></span></a>
+                                            <a href="https://www.osvaldoalvarado.com/" target="_blank" ><span  class="icon-earth"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Osvaldo Alvarado</div>
+                            </div>
+
+                            <div class="presentacion-card" style="background-image: url('img/alejandrasanz.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Publicista de profesión, dedicada a la Dirección de Arte Digital, con carácter, muy motivada, emprendedora y con ganas de superarse cada día. Profesionalmente autodidacta, dinámica y flexible.  
+                                        <p class="social">
+                                            <a href="https://www.linkedin.com/in/alejandra-sukii-sanz-39ab0574/" target="_blank" ><span  class="icon-linkedin"></span></a>
+                                            <a href="https://www.instagram.com/sukiisanz/" target="_blank" ><span  class="icon-instagram"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Alejandra Sanz</div>
+                            </div>
+
+                            <div class="presentacion-card" style="background-image: url('img/robertosierra.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Ing. Civil en Automatización con 6 años de experencia laboral, variados conocimientos en el área de automatización y control industrial, tanto en instrumentación y programación de PLCs (Allen bradley, Schneider, Siemens), ademas cuenta con conocimientos de programación web y de aplicaciones moviles enfocadas a soluciones industriales.
+                                        <p class="social">
+                                            <a href="https://www.linkedin.com/in/roberto-sierra-vera-2940a9a0/" target="_blank" ><span  class="icon-linkedin"></span></a>
+                                            <a href="https://www.instagram.com/raserober/" target="_blank" ><span  class="icon-instagram"></span></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Roberto Sierra</div>
+                            </div>     
+
+                            <div class="presentacion-card" style="background-image: url('img/nicolasojeda.jpeg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Informatico de profesion, dedicado a desarrollar paginas web y aplicaciones, enfocado tanto como en el backend y frontend.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Nicolas Ojeda</div>
+                            </div>
+
+                            <div class="presentacion-card" style="background-image: url('img/sebastianvera.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Informatico de profesion, dedicado a desarrollar paginas web y aplicaciones, enfocado tanto como en el backend y frontend.
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Sebastián Vera</div>
+                            </div>                       
+
+                            <div class="presentacion-card" style="background-image: url('img/sebastianhenriquez.jpg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Abogado, presta servicios legales altamente especializados en materias laborales y empresariales, con una asesoría de excelencia, oportuna y enfocada al resultado del negocio de sus clientes
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Sebastián Henriquez</div>
+                            </div>
+                            <div class="presentacion-card" style="background-image: url('img/felipedavidson.jpeg');">
+                                <div class="presentecion-body">
+                                    <div class="presentacion-info">
+                                        Abogado, con amplia experiencia y profundo conocimiento de toda la problemática asociada a los proyectos tanto privados como públicos, tradicional o concesionada, contando con extenso conocimiento del rubro, su regulación y los distintos actores que participan.  
+                                    </div>
+                                </div>
+                                <div class="presentacion-name">Felipe Davidson</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ventana izquierda">
+                    <div class="ventana-header">
+                        <div class="ventana-title">
+                            ¿Quiénes somos?
+                        </div>
+                        <div class="ventana-button">
+                            <i class="material-icons">remove</i>
+                            <i class="material-icons">filter_none</i>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </div>
+                    <div class="ventana-body">
+                        <div class="ventana-contenido">
+                            <div class="ventana-img" style="background-image: url(img/minga1.jpg);">
+                            </div>
+                            <ul class="redli">
+                                <li>
+                                    Somos curiosos, vemos las posibilidades y los progresos en el proceso creativo y el trabajo en equipo. Nuestra curiosidad y ganas de aprender hace que nos adaptemos y evolucionemos día a día.
+                                </li>
+                                <li>
+                                    Somos humanos, nos encanta trabajar con personas y para personas. Con sinceridad y realismo. Con exigencia pero con proximidad. Más que proyectos, buscamos y cultivamos relaciones a largo plazo.
+                                </li>
+                                <li>
+                                    Somos un equipo entregado a cada proyecto de inicio a fin. Unimos creatividad y técnica para hacer experiencias digitales con un diseño de calidad y un desarrollo óptimo y eficiente. Especialistas en usabilidad, arquitectura de la información y programación avanzada, usamos metodologías ágiles para asegurar la calidad de los proyectos y del equipo.
+                                </li>
+                                <li>
+                                    Somos expertos, tenemos la capacidad de experimentar y de hacer posibles ideas innovadoras. Nos basamos en la experiencia para solucionar los problemas y llevar nuestros proyectos a buen puerto.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="ventana derecha">
+                    <div class="ventana-header">
+                        <div class="ventana-title">
+                            Cómo trabajamos
+                        </div>
+                        <div class="ventana-button">
+                            <i class="material-icons">remove</i>
+                            <i class="material-icons">filter_none</i>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </div>
+                    <div class="ventana-body">
+                        <div class="ventana-contenido">
+                            <div class="ventana-img" style="background-image: url(img/minga2.jpg);">
+                            </div>
+                            <ul class="yellowli">
+                                <li>
+                                    Investigamos: Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este.
+                                </li>
+                                <li>
+                                    Arquitectura de la información (AI): Interiorizamos y conceptualizamos los proyectos para organizar la información y definir su estructura. 
+                                </li>
+                                <li>
+                                    Experiencia de usuario (UX): Estudiamos las interacciones y percepciones del usuario para garantizar una experiencia satisfactoria.
+                                </li>
+                                <li>
+                                    Diseño de Interfaz (UI): Creemos que la forma y el contenido van de la mano a través de la inspiración, la creatividad, el detalle y la interacción.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-footer">
+            <svg viewBox="0 0 2200 100" class="wave wave1">
+                <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+            <svg viewBox="0 0 2200 100" class="wave wave2">
+                <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+            <div id="bote-box">
+                <img id="bote" src="img/bote_4.svg"/>
+            </div>
+
+            <svg viewBox="0 0 2200 100" class="wave wave3">
+                <path fill="#DC4634" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+
+            <svg viewBox="0 0 2200 100" class="wave wave4">
+                <path fill="#DC4634" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+
+            <svg viewBox="0 0 2200 100" class="wave wave5">
+                <path fill="#C60729" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>
+
+            <svg viewBox="0 0 2200 100" class="wave wave6">
+                <path fill="#C60729" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
+            </svg>    
+        </div>
+    </div>
+    <div id="FOOTER">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-5 mb-4">
+                    <img src="img/footer-logo.svg" style="width:70%">
+                    <p class="mt-3 mb-3">Somos una cooperativa digital especializada en diseño y desarrollo avanzado. Estamos encantados de oír lo que quieras contarnos y ofrecerte las soluciones que necesita tu empresa.</p>
+                    <a  href="tel:+56973155545"><h5><b>Fono:</b> +56 9 7315 5545</h5></a>
+                    <a  href="mailto:info@codigominga.cl"><h5><b>Email:</b> info@codigominga.cl</h5></a>
+                </div>
+                <div class="col-12 col-sm-2 center mb-4">
+                </div>
+                <div class="col-12 col-sm-5 center mb-4">
+                    <div>
+                        <h5 class="mb-4" style="color:#F38540"><b>Nuestra Cooperativa</b></h5>
+                        <ul class="submenu">
+                            <li class="mb-3"><a href="#INICIO">Inicio</a></li>
+                            <li class="mb-3"><a href="#SERVICIOS">Servicios</a></li>
+                            <li class="mb-3"><a href="#NOSOTROS">Nosotros</a></li>
+                            <li class="mb-3"><a href="#FOOTER">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width:100%;background-color: rgba(0, 0, 0, 0.5);font-size: x-large;">
+            <div class="container">
+                <div id="sub-footer">
+                    <div  style="font-size:x-small;">2020 Código Minga</div>
+                    <a  href="https://www.facebook.com/codigominga/" target="_blank"><span class="icon-facebook2"></span></a>
+                    <a  href="https://www.instagram.com/codigominga/" target="_blank"><span  class="icon-instagram"></span></a>
+                    <a  href="https://github.com/CodigoMinga"  target="_blank"><span  class="icon-github"></span></a>
+                    <!--<a  href="#linkedin"><span  class="icon-linkedin"></span></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            console.log('class');
+            $('.ventana').click(function(){
+                var activa = $('.activa').eq(0);
+                var selecccionada = $(this);
+                var clase = selecccionada.attr('class').replace("ventana ", "");
+                if(activa != selecccionada){
+                    activa.removeClass('activa').addClass(clase);
+                    selecccionada.removeClass(clase).addClass('activa');
+                }
+            });
+        });
+
+        let cambia = $("#texto-cambia");
+        var iteracion=0;
+        window.setInterval(function(){
+
+            var texto = [
+                "Se trabaja día a día aprendiendo e investigando.",
+                "Es abierto y colaborativo.",
+                "Requiere tiempo y constancia.",
+                "Sale de mentes inquietas y humildes.",
+                "Es innovador."
+            ];
+            cambia.html(texto[iteracion]);
+            iteracion++;
+            if(iteracion>texto.length){
+                iteracion=0;
+            }
+
+        },5000);
+
+        //ESTILOS movimiento bote por scroll
+        let bote = document.getElementById("bote-box");
+        window.addEventListener('scroll',function(){
+            //valor scroll
+            var value = window.scrollY;
+            //limite Scroll
+            var limit = (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+            //porcentaje de avaze scroll - 20% del ancho del bote
+            var scrollPorcentual = (value/limit)*100 -20;
+            //ingresa al Right el calculo del 80% del scroll - el 80% del ancho del bote
+            bote.style.right = "calc("+0.8*scrollPorcentual+"% + "+0.8*bote.offsetWidth+"px)";
+        });
+    </script>
+  </body>
+>>>>>>> desarrollo_Roberto
 </html>
