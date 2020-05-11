@@ -25,7 +25,22 @@
         html,body{
             padding: 0px;
             margin: 0px;
-            background: linear-gradient(0deg, rgba(38, 43, 104,1) 0%, rgba(234, 247, 248,1) 66%);
+            background: linear-gradient(0deg, rgba(38, 43, 104,0.9) 0%, rgba(234, 247, 248,0.9) 66%);
+        }
+
+        #FULL::before{
+            content: '';
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            z-index: -1;
+            background-image: url('img/background-bw.jpg');          
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+            background-attachment: fixed;
         }
 
         .navbar-light .navbar-nav .nav-link{
@@ -592,7 +607,7 @@
         </div>
     </nav>
     <a  title='Contactanos por WhatsApp' class="whatsapp" href="https://api.whatsapp.com/send?phone=56973155545&amp;text=Hola%20quisiera%20realizar%20una%20consulta%20sobre%20sus%20servicios" target="_blank"></a>
-    <div>
+    <div id="FULL">
         <section id="INICIO" class="container">
             <div class="row">
                 <div class="col-12 col-sm-7"  style="
