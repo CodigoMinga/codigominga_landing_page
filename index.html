@@ -73,6 +73,7 @@
             -moz-box-shadow:    inset 6px 8px 6px -6px #F38540;
             -webkit-box-shadow: inset 6px 8px 6px -6px #F38540;
             box-shadow:         inset 6px 8px 6px -6px #F38540;
+            visibility: hidden;
         }
 
         .material-card img{
@@ -142,6 +143,7 @@
             position: absolute;
             bottom:-250px;
             padding: 10px;
+            padding-bottom: 40px;
             height: 250px;
             width: 220px;
             font-size: 1rem;
@@ -549,6 +551,24 @@
             }
         }
     </style>
+    <style>
+        .whatsapp{
+            position: fixed;
+            display:block;
+            width: 4rem;
+            height: 4rem;
+            background-image: url('img/WhatsApp.svg');
+            z-index: 9999;
+            right: 2rem;
+            bottom: 3rem;
+        }
+        
+        .whatsapp:hover{
+            animation-name: animationimg;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+    </style>
   </head>
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
@@ -563,11 +583,11 @@
                 <a class="nav-item nav-link" href="#SERVICIOS">SERVICIOS</a>
                 <a class="nav-item nav-link" href="#NOSOTROS">NOSOTROS</a>
                 <a class="nav-item nav-link" href="#FOOTER">CONTACTO</a>
-                <i class="material-icons nav-item nav-link">search</i>
               </div>
             </div>
         </div>
     </nav>
+    <a  title='Contactanos por WhatsApp' class="whatsapp" href="https://api.whatsapp.com/send?phone=56973155545&amp;text=Hola%20quisiera%20realizar%20una%20consulta%20sobre%20sus%20servicios" target="_blank"></a>
     <div>
         <section id="INICIO" class="container">
             <div class="row">
@@ -591,11 +611,11 @@
         </section>
         <section id="SERVICIOS" class="container">   
             <div class="title-div">
-                <div style="max-width:800px">
+                <div><!--style="max-width:800px">-->
                     <h2>Algunos de nuestros servicios más populares</h2>
                     <p style="font-size:large">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle serviciosa su medida.</p>
                 </div>
-                <div class="center" style="flex-grow: 1;">
+                <div class="center" style="flex-grow: 1; display:none">
                     <a class="btn btn-dangger" style="background-color: #EA0435;color:white;width: 180px;">Ver más</a>
                 </div>
             </div>
@@ -679,7 +699,11 @@
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
                                         Desarrollador, apasionado por la tecnología y la ciencia. En constante búsqueda de nuevas tecnologías.
-                                        <p class="social"><a href="https://www.linkedin.com/in/osvaldo-alvarado-426819167/" target="_blank" ><span  class="icon-linkedin"></span></a></p>
+                                        <p class="social">
+                                            <a href="https://www.linkedin.com/in/osvaldo-alvarado-426819167/" target="_blank" ><span  class="icon-linkedin"></span></a>
+                                            <a href="https://github.com/osvaldoalvaradodev/" target="_blank" ><span  class="icon-github"></span></a>
+                                            <a href="https://www.osvaldoalvarado.com/" target="_blank" ><span  class="icon-earth"></span></a>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Osvaldo Alvarado</div>
@@ -714,7 +738,7 @@
                             <div class="presentacion-card" style="background-image: url('img/nicolasojeda.jpeg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                        Informatico de profesion, dedicado a desarrollar paginas web y aplicaciones, enfocado tanto como en el backend y frontend.
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Nicolas Ojeda</div>
@@ -723,7 +747,7 @@
                             <div class="presentacion-card" style="background-image: url('img/sebastianvera.jpg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                        Informatico de profesion, dedicado a desarrollar paginas web y aplicaciones, enfocado tanto como en el backend y frontend.
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Sebastián Vera</div>
@@ -732,7 +756,7 @@
                             <div class="presentacion-card" style="background-image: url('img/sebastianhenriquez.jpg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                        Abogado, presta servicios legales altamente especializados en materias laborales y empresariales, con una asesoría de excelencia, oportuna y enfocada al resultado del negocio de sus clientes
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Sebastián Henriquez</div>
@@ -740,7 +764,7 @@
                             <div class="presentacion-card" style="background-image: url('img/felipedavidson.jpeg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit doloribus doloremque consequatur sit voluptas libero vel quibusdam similique, temporibus quae placeat quaerat laboriosam illo at? Labore, consequuntur pariatur? Eveniet, quia.
+                                        Abogado, con amplia experiencia y profundo conocimiento de toda la problemática asociada a los proyectos tanto privados como públicos, tradicional o concesionada, contando con extenso conocimiento del rubro, su regulación y los distintos actores que participan.  
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Felipe Davidson</div>
@@ -875,9 +899,9 @@
                 <div id="sub-footer">
                     <div  style="font-size:x-small;">2020 Código Minga</div>
                     <a  href="https://www.facebook.com/codigominga/" target="_blank"><span class="icon-facebook2"></span></a>
-                    <a  href="#instagram"><span  class="icon-instagram"></span></a>
-                    <a  href="#github"><span  class="icon-github"></span></a>
-                    <a  href="#linkedin"><span  class="icon-linkedin"></span></a>
+                    <!--<a  href="#instagram"><span  class="icon-instagram"></span></a>-->
+                    <a  href="https://github.com/CodigoMinga"  target="_blank"><span  class="icon-github"></span></a>
+                    <!--<a  href="#linkedin"><span  class="icon-linkedin"></span></a>-->
                 </div>
             </div>
         </div>
