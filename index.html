@@ -29,7 +29,7 @@
         html,body{
             padding: 0px;
             margin: 0px;
-            background: linear-gradient(0deg, rgba(236, 236, 236, 0.92) 0%, rgb(248, 249, 250,0.92) 33%);
+            background: linear-gradient(0deg, rgba(221, 222, 223, 0.92) 0%, rgb(248, 249, 250,0.92) 45%);
         }
 
         #FULL::before{
@@ -139,6 +139,7 @@
             background-position: center; 
             background-size: cover;
         }
+
         .presentecion-body{
             display: block;
             position: relative;
@@ -149,14 +150,15 @@
 
         .presentacion-name{
             position: absolute;
-            padding:10px;
+            padding-top:10px;
+            padding-bottom:10px;
             bottom:-28px;
             width:180px;
             left:calc(50% - 90px);
             border-radius: 5px;
             color:white;
             text-align: center;
-            background-color:#99A4A4;
+            background-color:rgba(38, 43, 104,1);
             transition: background-color 0.5s linear 0.1s;
         }
 
@@ -200,7 +202,7 @@
             font-weight: bold;
         }
         .ventana{
-            background-color: #C2C8C9;
+            background-color: rgb(194, 200, 201);
             border-radius: 8px;
             display: inline-block;
             margin: 1rem;
@@ -284,7 +286,9 @@
             justify-content:center;
             flex-wrap: wrap;
             overflow-y: scroll;
-            background-color: #e7e1df;
+            background-image: linear-gradient(to right, rgba(248, 249, 250,0.96), rgb(248, 249, 250,0.96)), url('img/fondo.jpeg');         
+            background-repeat: repeat;
+            background-size: 425px 353px;
         }
 
         .ventana-contenido li{
@@ -595,7 +599,7 @@
   <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <img src="img/navbar-logo.png" height="55"></img>
+            <img src="img/navbar-logo.svg" height="55" style="max-width: 75%;"></img>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -637,7 +641,7 @@
             <div class="title-div">
                 <div><!--style="max-width:800px">-->
                     <h2>Algunos de nuestros servicios más populares</h2>
-                    <p style="font-size:large">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle serviciosa su medida.</p>
+                    <p style="font-size:large">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle servicios a su medida.</p>
                 </div>
                 <div class="center" style="flex-grow: 1; display:none">
                     <a class="btn btn-dangger" style="background-color: #EA0435;color:white;width: 180px;">Ver más</a>
@@ -663,7 +667,7 @@
                     <h5 align="center"><b>Sitios Web y Aplicaciones</b></h5>
                 </div>
                 <div style="font-size: large;text-align: center;">
-                    Construimos webs con lo mejor de las apps y apps con las ventajas de una web. Con alta calidad, estables y eficientes para tu proyecto
+                    Construimos webs con lo mejor de las apps, y apps con las ventajas de una web. Con alta calidad, estables y eficientes para tu proyecto
                 </div>
                 <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
             </div>
