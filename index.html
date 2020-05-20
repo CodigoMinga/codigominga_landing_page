@@ -11,8 +11,9 @@
     <link href="icomoon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap" rel="stylesheet">
     <title>Código Minga - Conectando técnica y creatividad</title>
-      <meta name="description" content="Proyectos digitales, Aplicaciones Móviles, Aplicaciones Web, Automatización, Publicidad, Marketing" />
+      <meta name="description" content="Proyectos digitales, Aplicaciones Móviles, Aplicaciones Web, Automatización, Publicidad, Marketing, Asesoría Legal" />
       <meta property="og:image" content="http://www.codigominga.cl/img/favicon.png">
 
 
@@ -21,11 +22,28 @@
         *{
             font-family: 'Poppins', sans-serif;
         }
-
+        .cursiva{
+            font-family: 'Exo 2', sans-serif;
+            font-size: 3.8rem;
+        }
         html,body{
             padding: 0px;
             margin: 0px;
-            background: linear-gradient(0deg, rgba(38, 43, 104,1) 0%, rgba(234, 247, 248,1) 66%);
+            background: linear-gradient(0deg, rgba(221, 222, 223, 0.92) 0%, rgb(248, 249, 250,0.92) 45%);
+        }
+
+        #FULL::before{
+            content: '';
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            z-index: -1;
+            background-image: url('img/fondo.jpeg');         
+            background-repeat: repeat; /* Do not repeat the image */
+            background-attachment: fixed;
+            background-size: 425px 353px;
         }
 
         .navbar-light .navbar-nav .nav-link{
@@ -121,6 +139,7 @@
             background-position: center; 
             background-size: cover;
         }
+
         .presentecion-body{
             display: block;
             position: relative;
@@ -131,14 +150,15 @@
 
         .presentacion-name{
             position: absolute;
-            padding:10px;
+            padding-top:10px;
+            padding-bottom:10px;
             bottom:-28px;
             width:180px;
             left:calc(50% - 90px);
             border-radius: 5px;
             color:white;
             text-align: center;
-            background-color:#99A4A4;
+            background-color:rgba(38, 43, 104,1);
             transition: background-color 0.5s linear 0.1s;
         }
 
@@ -182,7 +202,7 @@
             font-weight: bold;
         }
         .ventana{
-            background-color: #C2C8C9;
+            background-color: rgb(194, 200, 201);
             border-radius: 8px;
             display: inline-block;
             margin: 1rem;
@@ -266,7 +286,9 @@
             justify-content:center;
             flex-wrap: wrap;
             overflow-y: scroll;
-            background-color: #e7e1df;
+            background-image: linear-gradient(to right, rgba(248, 249, 250,0.96), rgb(248, 249, 250,0.96)), url('img/fondo.jpeg');         
+            background-repeat: repeat;
+            background-size: 425px 353px;
         }
 
         .ventana-contenido li{
@@ -312,7 +334,7 @@
         .ventana-header{
             margin-left:5px;
             margin-right:5px;
-            padding: 10px;
+            padding: 5px;
             display: block;
             position: relative;
             display: flex;
@@ -324,12 +346,12 @@
             flex-grow: 1;
             font-weight: bold;
             color:#EDEDED;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
-        .ventana-button{
+        .ventana-button i{
             color:#EDEDED;
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         .ventana-img{
@@ -412,7 +434,7 @@
         }
         .title-div{
             width:100%;
-            background-color: #E5E5E5;
+            background-color: rgb(229, 229, 229,0.45);
             border-radius:8px;
             margin:2rem;
             padding:1rem;
@@ -575,9 +597,9 @@
     </style>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
         <div class="container">
-            <img src="img/navbar-logo.png" height="55"></img>
+            <img src="img/navbar-logo.svg" height="55" style="max-width: 75%;"></img>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -592,24 +614,26 @@
         </div>
     </nav>
     <a  title='Contactanos por WhatsApp' class="whatsapp" href="https://api.whatsapp.com/send?phone=56973155545&amp;text=Hola%20quisiera%20realizar%20una%20consulta%20sobre%20sus%20servicios" target="_blank"></a>
-    <div>
+    <div id="FULL">
         <section id="INICIO" class="container">
             <div class="row">
-                <div class="col-12 col-sm-7"  style="
-                display: flex;
-                justify-content: center;
-                align-items: center;">
-                    <div>
+                <div class="col-12 col-sm-7">
+                    <div style="
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: left;z-index:1">
+                        <br>
+                        <br>
                         <h3>Cooperativa Digital</h3>
-                        <br></br>
-                        <h1 class="text-red">Conectando</h1>
-                        <h1 class="text-red"><b>Técnica y Creatividad</b></h1>
-                        <br></br>
+                        <h1 class="text-red cursiva">Conectando</h1>
+                        <h1 class="text-red"><b class="cursiva">Técnica y Creatividad</b></h1>
+                        <br>
                         <h5>Déjanos llevar tu proyecto en nuestra Minga</h5>
                     </div>
-                </div>
-                <div class="col-12 col-sm-5">
-                    <img src="img/cm-1.svg" style="width:100%;padding:20px;"/>
+                </div>  
+                <div class="col-12 col-sm-5" align="right" style="position: relative;">
+                    <img src="img/cm-1.svg" style="width: 100%;padding-top:20px;"/>
                 </div>
             </div>
         </section>
@@ -617,7 +641,7 @@
             <div class="title-div">
                 <div><!--style="max-width:800px">-->
                     <h2>Algunos de nuestros servicios más populares</h2>
-                    <p style="font-size:large">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle serviciosa su medida.</p>
+                    <p style="font-size:large">Analizamos y estudiamos el proyecto de cada cliente con tal de comprender las necesidades de este y ofrecerle servicios a su medida.</p>
                 </div>
                 <div class="center" style="flex-grow: 1; display:none">
                     <a class="btn btn-dangger" style="background-color: #EA0435;color:white;width: 180px;">Ver más</a>
@@ -628,7 +652,7 @@
                     <img src="img/clases.svg"/>
                 </div>
                 <div class="center" style="height: 85px;">
-                    <h5 align="center"><b>Asesorias y Talleres</b></h5>
+                    <h5 align="center"><b>Asesorías y Talleres</b></h5>
                 </div>
                 <div style="font-size: large;text-align: center;">
                     Analizamos tu producto o servicio para detectar puntos perjudiciales y ofrecerte oportunidades de mejora.
@@ -643,7 +667,7 @@
                     <h5 align="center"><b>Sitios Web y Aplicaciones</b></h5>
                 </div>
                 <div style="font-size: large;text-align: center;">
-                    Construimos webs con lo mejor de las apps y apps con las ventajas de una web. Con alta calidad, estables y eficientes para tu proyecto
+                    Construimos webs con lo mejor de las apps, y apps con las ventajas de una web. Con alta calidad, estables y eficientes para tu proyecto.
                 </div>
                 <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
             </div>
@@ -667,7 +691,7 @@
                     <h5 align="center"><b>Soporte y Mantención</b></h5>
                 </div>
                 <div style="font-size: large;text-align: center;">
-                    Nuestro compromiso no termina con la finalizacion del proyecto, te acompañamos más allá de su entrega.
+                    Nuestro compromiso no termina con la finalización del proyecto, te acompañamos más allá de su entrega.
                 </div>
                 <a class="btn btn-warning" style="background-color: #F69E4D;">Quiero Más Info</a>
             </div>
@@ -676,7 +700,7 @@
             <div class="title-div">
                 <div style="width: 100%;">
                     <h1 class="text-red" align="center">¿POR QUÉ CÓDIGO MINGA?</h1>
-                    <h6  align="center">Porque creemos que un buen proyecto..</h6>
+                    <h6  align="center">Porque creemos que un buen proyecto...</h6>
                     <div class="center" style="height:60px">
                         <h5 id="texto-cambia" class="text-red"  align="center">Se trabaja día a día aprendiendo e investigando.</h5>
                     </div>
@@ -729,7 +753,7 @@
                             <div class="presentacion-card" style="background-image: url('img/robertosierra.jpg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Ing. Civil en Automatización con 6 años de experencia laboral, variados conocimientos en el área de automatización y control industrial, tanto en instrumentación y programación de PLCs (Allen bradley, Schneider, Siemens), ademas cuenta con conocimientos de programación web y de aplicaciones moviles enfocadas a soluciones industriales.
+                                        Ing. Civil en Automatización con 6 años de experiencia laboral, variados conocimientos en el área de automatización y control industrial, tanto en instrumentación y programación de PLCs (Allen bradley, Schneider, Siemens), además cuenta con conocimientos de programación web y de aplicaciones móviles enfocadas a soluciones industriales.
                                         <p class="social">
                                             <a href="https://www.linkedin.com/in/roberto-sierra-vera-2940a9a0/" target="_blank" ><span  class="icon-linkedin"></span></a>
                                             <a href="https://www.instagram.com/raserober/" target="_blank" ><span  class="icon-instagram"></span></a>
@@ -742,16 +766,16 @@
                             <div class="presentacion-card" style="background-image: url('img/nicolasojeda.jpeg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Informatico de profesion, dedicado a desarrollar paginas web y aplicaciones, enfocado tanto como en el backend y frontend.
+                                        Informático de profesión, dedicado a desarrollar páginas web y aplicaciones, enfocado tanto como en el backend y frontend.
                                     </div>
                                 </div>
-                                <div class="presentacion-name">Nicolas Ojeda</div>
+                                <div class="presentacion-name">Nicolás Ojeda</div>
                             </div>
 
                             <div class="presentacion-card" style="background-image: url('img/sebastianvera.jpg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Informatico de profesion, dedicado a desarrollar paginas web y aplicaciones, enfocado tanto como en el backend y frontend.
+                                        Informático de profesión, dedicado a desarrollar páginas web y aplicaciones, enfocado tanto como en el backend y frontend.
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Sebastián Vera</div>
@@ -760,7 +784,7 @@
                             <div class="presentacion-card" style="background-image: url('img/sebastianhenriquez.jpg');">
                                 <div class="presentecion-body">
                                     <div class="presentacion-info">
-                                        Abogado, presta servicios legales altamente especializados en materias laborales y empresariales, con una asesoría de excelencia, oportuna y enfocada al resultado del negocio de sus clientes
+                                        Abogado, presta servicios legales altamente especializados en materias laborales, con una asesoría de excelencia, oportuna y enfocada al resultado del negocio de sus clientes.
                                     </div>
                                 </div>
                                 <div class="presentacion-name">Sebastián Henriquez</div>
@@ -842,6 +866,9 @@
                 </div>
             </div>
         </section>
+        <section id="CLIENTES" style="height: 8vh;"> 
+
+        </section>
         <div class="main-footer">
             <svg viewBox="0 0 2200 100" class="wave wave1">
                 <path fill="#F07E3F" d="M 0 50 C 100 50 100 0 200 0 C 250 0 300 50 400 50 C 500 50 550 0 700 0 C 850 0 900 50 1000 50 L 1100 50 C 1200 50 1200 0 1300 0 C 1400 0 1400 50 1500 50 L 1600 50 C 1750 50 1750 0 1850 0 C 1950 0 2000 50 2100 50 L 2200 50 L 2200 100 L 0 100 Z"/>
@@ -852,7 +879,7 @@
             </svg>
 
             <div id="bote-box">
-                <img id="bote" src="img/bote_4.svg"/>
+                <img id="bote" src="img/bote_6.svg"/>
             </div>
 
             <svg viewBox="0 0 2200 100" class="wave wave3">
