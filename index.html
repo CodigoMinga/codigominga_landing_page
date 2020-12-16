@@ -898,7 +898,6 @@
             </div>
         </section>
         <section id="CLIENTES" style="margin-top: 5rem;padding-bottom: 10vw;" class="container">
-            
             <div class="title-div">
                 <div style="width: 100%;">
                     <h1 class="text-red" align="center">Clientes con los que hemos trabajado</h1>
@@ -908,6 +907,9 @@
                 <a class="logo-cliente" target="_blank" href="https://www.exxsa.cl">
                     <img src="clientes/exxsa.png">
                 </a>
+                <a class="logo-cliente" target="_blank" href="https://carneyseria.cl/">
+                    <img src="clientes/carneyseria.png">
+                </a>
                 <a class="logo-cliente" target="_blank" href="https://www.cesch.org/">
                     <img src="clientes/cesch.png">
                 </a>
@@ -916,6 +918,9 @@
                 </a>
                 <a class="logo-cliente" target="_blank" href="https://sindicatopdp.cl/">
                     <img src="clientes/sindicatopdp.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://constructoramayo.cl/">
+                    <img src="clientes/mayo.png">
                 </a>
                 <a class="logo-cliente" target="_blank" href="https://www.freemenu.online/">
                     <img src="clientes/FreeMenu.png">
@@ -1060,11 +1065,10 @@
             ];
             cambia.html(texto[iteracion]);
             iteracion++;
-            if(iteracion>texto.length){
+            if(iteracion==texto.length){
                 iteracion=0;
             }
-
-        },5000);
+        },4000);
 
         //ESTILOS movimiento bote por scroll
         let bote = document.getElementById("bote-box");
