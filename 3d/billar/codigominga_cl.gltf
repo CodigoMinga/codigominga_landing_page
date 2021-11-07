@@ -1,0 +1,143 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.3.48",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Sphere",
+            "rotation" : [
+                0,
+                -0.7086883783340454,
+                0,
+                0.7055216431617737
+            ],
+            "translation" : [
+                -1.8164515495300293e-05,
+                -0.0008649528026580811,
+                -0.001012598630040884
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                0,
+                0,
+                0
+            ],
+            "name" : "billar",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0,
+                    "texCoord" : 0
+                },
+                "metallicFactor" : 0.3758864998817444,
+                "roughnessFactor" : 0.3297872543334961
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Sphere.001",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "WhatsApp Image 2021-11-07 at 02.50.46",
+            "uri" : "WhatsApp%20Image%202021-11-07%20at%2002_50_46.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 2365,
+            "max" : [
+                0.9872314929962158,
+                0.9975740909576416,
+                0.987224280834198
+            ],
+            "min" : [
+                -0.9872308969497681,
+                -0.9975793361663818,
+                -0.9872382879257202
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2365,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2365,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 11904,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 28380,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 28380,
+            "byteOffset" : 28380
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 18920,
+            "byteOffset" : 56760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 23808,
+            "byteOffset" : 75680
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 99488,
+            "uri" : "codigominga_cl.bin"
+        }
+    ]
+}
