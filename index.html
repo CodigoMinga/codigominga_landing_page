@@ -14,6 +14,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="fb:pages" content="110087807343194" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -22,6 +23,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <title>Código Minga - Conectando técnica y creatividad</title>
       <meta name="description" content="Proyectos digitales, Aplicaciones Móviles, Aplicaciones Web, Automatización, Publicidad, Marketing, Asesoría Legal" />
       <meta property="og:image" content="http://www.codigominga.cl/img/favicon.png">
@@ -272,6 +275,14 @@
             }
         }
 
+        
+        @media only screen and (max-width: 700px) {
+
+
+            .cursiva{
+                font-size: unset;                
+            }
+        }
         .ventana-body{
             background-color: white;
             border-radius: 8px;
@@ -446,13 +457,13 @@
             width:100%;
             background-color: rgb(229, 229, 229,0.45);
             border-radius:8px;
-            margin:2rem;
+            margin-bottom:2rem;
+            margin-top:2rem;
             padding:1rem;
             display: flex;
             flex-direction: row;
             align-items: center;
             flex-wrap: wrap;
-
         }
         
         .title-div p{
@@ -462,6 +473,17 @@
         .title-div .btn{
             padding:15px;            
             text-transform: uppercase;
+        }
+        .logo-cliente{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            align-items:center;
+            width: 15rem;
+            height: 15rem;
+        }
+        .owl-nav{
+            display: none;
         }
     </style>
     <!--ESTILOS BOTE DE ACA PARA ABAJO-->
@@ -623,7 +645,7 @@
             </div>
         </div>
     </nav>
-    <a  title='Contactanos por WhatsApp' class="whatsapp" href="https://api.whatsapp.com/send?phone=56973155545&amp;text=Hola%20quisiera%20realizar%20una%20consulta%20sobre%20sus%20servicios" target="_blank"></a>
+    <a  title='Contactanos por WhatsApp' class="whatsapp" href="https://api.whatsapp.com/send?phone=56998281526&amp;text=Hola%20quisiera%20realizar%20una%20consulta%20sobre%20sus%20servicios" target="_blank"></a>
     <div id="FULL">
         <section id="INICIO" class="container">
             <div class="row">
@@ -632,11 +654,12 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
-                        align-items: left;z-index:1">
+                        align-items: left;z-index:1"
+                        id="gran-title">
                         <br>
                         <br>
                         <h3>Cooperativa Digital</h3>
-                        <h1 class="text-red cursiva">Conectando</h1>
+                        <h1 class="text-red"><b class="cursiva">Conectando</b></h1>
                         <h1 class="text-red"><b class="cursiva">Técnica y Creatividad</b></h1>
                         <br>
                         <h5>Déjanos llevar tu proyecto digital en nuestra Minga</h5>
@@ -883,8 +906,44 @@
                 </div>
             </div>
         </section>
-        <section id="CLIENTES" style="height: 8vh;"> 
-
+        <section id="CLIENTES" style="margin-top: 5rem;padding-bottom: 10vw;z-index:500" class="container">
+            <div class="title-div">
+                <div style="width: 100%;">
+                    <h1 class="text-red" align="center">CLIENTES CON LOS QUE HEMOS TRABAJADO</h1>
+                </div>
+            </div>
+            <div class="owl-carousel" style="z-index:0">
+                <a class="logo-cliente" target="_blank" href="https://www.exxsa.cl">
+                    <img src="clientes/exxsa.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://carneyseria.cl/">
+                    <img style="padding:2rem" src="clientes/carneyseria.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://www.cesch.org/">
+                    <img src="clientes/cesch.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="http://sigmaplagas.cl/">
+                    <img src="clientes/sigma.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://sindicatopdp.cl/">
+                    <img src="clientes/sindicatopdp.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://constructoramayo.cl/">
+                    <img src="clientes/mayo.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://www.freemenu.online/">
+                    <img src="clientes/FreeMenu.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://www.sectorcontrolado.cl/">
+                    <img src="clientes/SectorControlado.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://www.servitronicaustral.cl">
+                    <img style="padding:2rem" src="clientes/ServitronicAustral.png">
+                </a>
+                <a class="logo-cliente" target="_blank" href="https://bastcon.cl/">
+                    <img src="clientes/bastcon.png">
+                </a>
+              </div>
         </section>
         <div class="main-footer">
             <svg viewBox="0 0 2200 100" class="wave wave1">
@@ -924,7 +983,7 @@
                 <div class="col-12 col-sm-5 mb-4">
                     <img src="img/footer-logo.svg" style="width:70%">
                     <p class="mt-3 mb-3">Somos una cooperativa digital especializada en diseño y desarrollo avanzado. Estamos encantados de oír lo que quieras contarnos y ofrecerte las soluciones que necesita tu empresa.</p>
-                    <a  href="tel:+56973155545"><h5><b>Fono:</b> +56 9 7315 5545</h5></a>
+                    <a  href="tel:+56998281526"><h5><b>Fono:</b> +56 9 9828 1526</h5></a>
                     <a  href="mailto:contacto@codigominga.cl"><h5><b>Email:</b> contacto@codigominga.cl</h5></a>
                 </div>
                 <div class="col-12 col-sm-2 center mb-4">
@@ -956,12 +1015,41 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function() {
-            console.log('class');
+            var owl = $('.owl-carousel');
+                owl.owlCarousel({
+                    items:4,
+                    loop:true,
+                    margin:10,
+                    autoplay:true,
+                    autoplayTimeout:1000,
+                    autoplayHoverPause:true,
+                    responsiveClass:true,
+                    responsive:{
+                        0:{
+                            items:1,
+                            nav:true,
+                        },
+                        480:{
+                            items:2,
+                            nav:true,
+                        },
+                        1000:{
+                            items:3,
+                            nav:true,
+                        },
+                        1200:{
+                            items:4,
+                            nav:true,
+                        }
+                    }
+                });
+
             $('.ventana').click(function(){
                 var activa = $('.activa').eq(0);
                 var selecccionada = $(this);
@@ -986,11 +1074,10 @@
             ];
             cambia.html(texto[iteracion]);
             iteracion++;
-            if(iteracion>texto.length){
+            if(iteracion==texto.length){
                 iteracion=0;
             }
-
-        },5000);
+        },4000);
 
         //ESTILOS movimiento bote por scroll
         let bote = document.getElementById("bote-box");
